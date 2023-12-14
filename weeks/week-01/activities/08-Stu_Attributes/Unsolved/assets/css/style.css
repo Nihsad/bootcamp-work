@@ -6,6 +6,10 @@
   color: darkblue;
 }
 
+img {
+  width:200px;
+}
+
 #email {
   background-color: goldenrod;
 }
