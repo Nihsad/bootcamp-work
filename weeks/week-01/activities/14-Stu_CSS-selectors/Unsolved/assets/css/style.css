@@ -1,13 +1,16 @@
 /* TODO: Label selector type */
+/* this selector is global. selects all elements on a page and applies the styles to them. */
 * {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   }
 
 /* TODO: Label selector type */
+/* this selector focuses on the body element and applies the styles to everything within that element. */
 body {
   background-color: lemonchiffon;
 }
 
+/* this selector focuses on the header and footer elements */
 header,
 footer {
   width: 100%;
@@ -17,17 +20,18 @@ footer {
   background-color: #191970;
 }
 
+/* this selector applies the specified styles to all figure elements */
 figure {
   width: 200px;
   background-color: #f0ead6;
 }
 
-/* TODO: Label selector type */
+/* selects all elements with a class of 'highlighted-text' and applies the relevant styles */
 .highlighted-text {
   font-weight: bolder;
 }
 
-/* TODO: Label selector type */
+/* selects the element with an id of 'contact-section and applies the relevant styles */
 #contact-section {
   background-color: #f0ead6;
 }
