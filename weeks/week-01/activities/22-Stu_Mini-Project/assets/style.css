@@ -1,0 +1,71 @@
+:root {
+    --yellow: #fcf9d1;
+    --green: darkgreen;
+    --beige: #ffd483;
+    --brown: brown;
+}
+
+* {
+    background-color: var(--yellow);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header,
+footer {
+    background-color: var(--green);
+    height: 30px;
+    width:100%;
+    color: var(--yellow);
+    text-align: center;
+}
+
+header {
+    position: sticky;
+    border-bottom: 10px solid var(--beige);
+}
+
+footer {
+    border-bottom: 10px solid var(--brown);
+    padding-top: 5px;
+}
+
+ul {
+    padding-right: 10px;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    float:right;
+    margin: 5px;
+    background-color: transparent;
+    color: var(--yellow);
+    letter-spacing: 1.05px;
+}
+
+section {
+    height: 100%;
+    margin: 0 auto;
+}
+
+section img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+section h1 {
+    text-align: center;
+    color: var(--brown);
+}
+
+section.contact {
+    background-color: var(--beige);
+    border: 1px solid transparent;
+}
+
+section.contact h2{
+    text-align: center;
+    background-color: transparent;
+}
