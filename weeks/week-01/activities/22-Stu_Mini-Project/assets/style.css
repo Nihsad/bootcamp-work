@@ -45,8 +45,6 @@ header {
     z-index: 1;
 }
 
-
-
 header ul {
 	list-style-type: none;
     float:right;
@@ -85,6 +83,7 @@ section.info p {
 section.info h1 {
 	margin: 0 auto;
 	text-align: center;
+    padding-top: 10px;
 }
 
 section#contact {
