@@ -97,9 +97,13 @@ section#contact {
 	background-color: var(--accent1);
 }
 
+section#contact h2 {
+	padding-top: 10px;
+}
+
 form {
 	width: 400px;
-	border: 5px solid var(--maintxt);
+	border: 4px solid var(--maintxt);
 	border-radius: 20px;
 	padding: 10px;
 	margin: auto;
