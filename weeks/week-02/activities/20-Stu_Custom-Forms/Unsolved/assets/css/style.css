@@ -86,10 +86,12 @@ button {
 }
 
 /* What does this CSS rule do and what does moz and webkit represent? */
+/* appearance specifies the kind of button and other controls that are displayed in a checkbox */
+/* -moz and -webkit are for browser compatability support. */
 select {
-  /* -moz-appearance: none;
-  -webkit-appearance: none; */
-  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance:none;
   background-image: url("../images/arrow.png");
   background-repeat: no-repeat;
   background-position: right;
@@ -113,11 +115,13 @@ select:hover, button:hover {
 }
 
 /* What does this pseudo-class mean? */
+/* :focus is telling the .text-input fields to display a border-right of 5 px width when the cursor is within the textarea. It defaults to a solid border, but the next pseudo-class changes that. */
 .text-input:focus {
   border-right-width: 5px;
 }
 
 /* What does this pseudo-class mean? */
+/* placeholder-shown is telling the browser to display a dashed border when the textarea is in focus but hasn't had any unser-entered data input. */
 .text-input:placeholder-shown {
   border-style: dashed;
 }
@@ -137,12 +141,14 @@ select:hover, button:hover {
 }
 
 /* What does this selector do? */
+/* tells the browser to apply the styles to the label element when the checkbox is checked. */
 .checkbox:checked + label {
   color: #999999;
   font-style: italic;
 }
 
 /* What does this selector do? */
+/* tells the browser to add a thank you message after the label when the checkbox is checked. */
 .checkbox:checked + label::after {
   margin-left: 10px;
   font-size: 90%;

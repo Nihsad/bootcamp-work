@@ -22,6 +22,11 @@ h2 {
   font-size: 250%;
 }
 
+h3 {
+  margin: 2% 0;
+  font-size: 175%;
+}
+
 nav ul {
   display: flex;
   justify-content: space-between;
@@ -89,9 +94,16 @@ footer {
 
 /* TODO: Add styles that will hide the resource links by default */
 
-
+.resources ul {
+  display: none;
+  cursor: pointer;
+}
 
 /* TODO: Add styles that will display the links when the mouse hovers over the parent element */
+
+.resources:hover ul {
+  display: block;
+}
 
 
 
