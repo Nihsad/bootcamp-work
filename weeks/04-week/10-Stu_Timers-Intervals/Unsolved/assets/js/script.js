@@ -17,6 +17,8 @@ function countdown() {
     if(timeLeft === 0) {
       clearInterval(timeInterval);
 
+      timerEl.textContent = '';
+
       displayMessage();
     }
   }, 1000);
@@ -31,6 +33,8 @@ function displayMessage() {
     if (words[wordCount] === undefined) {
       // Use `clearInterval()` to stop the timer
       clearInterval(msgInterval);
+      // Reset mainEl.textContent after clearing the interval
+      mainEl.textContent = '';
     } else {
       // Display one word of the message
       mainEl.textContent = words[wordCount];

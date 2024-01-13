@@ -3,6 +3,7 @@ var totalEl = document.querySelector("#total");
 var submitEl = document.querySelector("#submit");
 
 function calculateTip(total, tipPercentage) {
+  event.preventDefault();
   var roundedResult = (total * tipPercentage).toFixed(2);
   return roundedResult;
 }
