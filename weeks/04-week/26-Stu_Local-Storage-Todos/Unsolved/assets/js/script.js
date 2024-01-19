@@ -3,15 +3,16 @@ var todoForm = document.querySelector("#todo-form");
 var todoList = document.querySelector("#todo-list");
 var todoCountSpan = document.querySelector("#todo-count");
 
+// declare empty array
 var todos = [];
 
-// TODO: What is the purpose of this function?
+// this function is what shows the already-entered items into the todo list.
 function renderTodos() {
-  // TODO: Describe the functionality of the following two lines of code.
+  //  the first line sets the contents of the todo list itself to a blank state, while the second defines the number value entered into the todoCountSpan element (#todo-count) by calling the length of the todos array.
   todoList.innerHTML = "";
   todoCountSpan.textContent = todos.length;
   
-  // TODO: Describe the functionality of the following `for` loop.
+  // this for loop starts by accessing the current todo item array and adds an additional list item, sets the text content of that list item to the current todo, sets a data-attribute of "data-index" to the current list item, creates a new button element, sets the text content of that button element to "Complete ✔️", appends button as child of list item, then appends list item as child of the todoList element.
   for (var i = 0; i < todos.length; i++) {
     var todo = todos[i];
 
@@ -29,25 +30,25 @@ function renderTodos() {
 
 // TODO: What is the purpose of the following function?
 function init() {
-  // TODO: What is the purpose of the following line of code?
+  //retrieves existing todos stored in localStorage and parses them as an object
   var storedTodos = JSON.parse(localStorage.getItem("todos"));
-  // TODO: Describe the functionality of the following `if` statement.
+  // checks if stored todos exist, and if they do, assigns them to the global variable "todos"
   if (storedTodos !== null) {
     todos = storedTodos;
   }
-  // TODO: Describe the purpose of the following line of code.
+  // this runs the renderTodos function described above.
   renderTodos();
 }
 
 function storeTodos() {
-  // TODO: Describe the purpose of the following line of code.
+  // sets a localStorage item to store todo entries and turns them into a JSON string.
   localStorage.setItem("todos", JSON.stringify(todos));
 }
-// TODO: Describe the purpose of the following line of code.
+// on submit, adds a new item to the todos variable
 todoForm.addEventListener("submit", function(event) {
   event.preventDefault();
   var todoText = todoInput.value.trim();
-  // TODO: Describe the functionality of the following `if` statement.
+  // if the form field is empty, exit/end the function.
   if (todoText === "") {
     return;
   }
