@@ -6,6 +6,20 @@
   --light: #fffaf7;
 }
 
+body {
+  font-family: 'Palanquin', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-family: 'Gilda Display', serif;
+}
+
 ::selection {
   color: var(--brown);
   background-color: var(--light);
@@ -18,6 +32,7 @@
 .custom-navbar a {
   font-size: 1.5rem;
   color: var(--lightteal);
+  font-family: 'Gilda Display', serif;
 }
 
 .custom-navbar a:hover {

@@ -30,6 +30,19 @@ function handleFormSubmit(event) {
 
 // TODO: Create a function to handle removing a list item when `.delete-item-btn` is clicked
 
+// Define a named function
+function handleDeleteItemClick() {
+  // Remove the closest 'li' parent of the clicked button
+  $(this).closest('li').remove();
+}
+
+
+
 // TODO: Use event delegation and add an event listener to `shoppingListEl` to listen for a click event on any element with a class of `.delete-item-btn` and execute the function created above
 
 shoppingFormEl.on('submit', handleFormSubmit);
+
+// Attach the named function as the handler for the click event
+$(document).ready(function () {
+  $('.delete-item-btn').on('click', handleDeleteItemClick);
+});
